@@ -1,19 +1,16 @@
 package main.java.users;
 
 import java.time.LocalDate;
-import java.util.List;
 
-public class Users {
+public class User {
     private String email;
     private String team;
     private LocalDate loginDate;
-    private List<String> classes;
 
-    public Users(String email, String team, LocalDate loginDate, List<String> classes) {
+    public User(String email, String team, LocalDate loginDate) {
         this.email = email;
         this.team = team;
         this.loginDate = loginDate;
-        this.classes = classes;
     }
 
     public String getEmail() {
@@ -28,7 +25,12 @@ public class Users {
         return loginDate;
     }
 
-    public List<String> getClasses() {
-        return classes;
+    @Override
+    public String toString() {
+        return "User{" +
+                "email='" + email + '\'' +
+                ", team='" + team + '\'' +
+                ", loginDate=" + loginDate +
+                '}';
     }
 }
