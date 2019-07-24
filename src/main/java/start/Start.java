@@ -1,6 +1,5 @@
 package main.java.start;
 
-import main.java.boxes.Box;
 import main.java.boxes.PackingInTheBox;
 import main.java.boxes.Protector;
 import main.java.boxes.Thing;
