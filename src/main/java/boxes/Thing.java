@@ -3,11 +3,11 @@ package main.java.boxes;
 public class Thing {
     private String name;
 
-    public Thing(String name) {
+    Thing(String name) {
         this.name = name;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
